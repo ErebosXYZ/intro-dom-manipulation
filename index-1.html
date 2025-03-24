@@ -83,7 +83,7 @@
         console.log(document.querySelector(".price").textContent);
 
         // 3. Muestra el precio del producto por consola sin el símbolo del dólar
-        console.log(document.querySelector(".price").textContent.replace("$", "").trim());
+        console.log(document.querySelector(".price").textContent.slice(0));
 
         // 4. COMPLICADO. Muestra por consola el valor del estilo en línea 'width' del tag <img>
         console.log(document.querySelector("img").style.width);
@@ -116,7 +116,7 @@
         let newPrice = 19.99 - (19.99 * 0.21);
         
         newPrice = newPrice.toFixed(2)
-        
+
         console.log(document.querySelector(".price").innerText = `$${newPrice}`);
 
 
